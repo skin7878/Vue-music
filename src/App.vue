@@ -265,7 +265,7 @@
     </div>
   </div>
 
-  <!-- <TheAuth /> -->
+  <TheAuth />
 </template>
 
 <script setup>

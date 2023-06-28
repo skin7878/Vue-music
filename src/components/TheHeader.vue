@@ -10,7 +10,7 @@
         <ul class="flex flex-row mt-1">
           <!-- Navigation Links -->
           <li>
-            <a class="px-2 text-white" href="#">Login / Register</a>
+            <a class="px-2 text-white" href="#" @click="toggleAuthModal">Login / Register</a>
           </li>
           <li>
             <a class="px-2 text-white" href="#">Manage</a>
@@ -21,4 +21,7 @@
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { useModalStore } from '../stores/modal'
+const { toggleAuthModal } = useModalStore()
+</script>
